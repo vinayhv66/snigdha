@@ -49,26 +49,34 @@ export const LuxeProductHero: React.FC = () => {
             quality={92}
             sizes="100vw"
           />
+          {/* Dark overlay to improve text contrast */}
+          <div style={{
+            position: 'absolute',
+            inset: 0,
+            background: 'rgba(0, 0, 0, 0.35)',
+            zIndex: 1,
+          }} />
         </div>
 
         {/* ── Hero Typography & 1-Click Direct Order Action ── */}
         <div style={{
           maxWidth: '720px',
           margin: '-120px auto 0',
-          padding: '0 16px',
+          padding: '20px 24px 16px',
           textAlign: 'center',
           position: 'relative',
           zIndex: 2,
         }}>
           {/* Main Headline */}
           <h1 style={{
-            fontFamily: "'Cormorant Garamond', Georgia, serif",
-            fontSize: 'clamp(2.2rem, 4.2vw, 3.2rem)',
-            fontWeight: 700,
+            fontFamily: "var(--font-oswald), 'Oswald', sans-serif",
+            fontSize: 'clamp(2.6rem, 5vw, 3.8rem)',
+            fontWeight: 900,
             lineHeight: 1.1,
-            color: '#121e17',
+            color: '#7a4f2d',
             margin: '0 auto 4px',
-            letterSpacing: '-0.02em',
+            letterSpacing: '0.04em',
+            textTransform: 'uppercase',
           }}>
             Pure Wood-Pressed<br />
             Healthy Cooking Oils
@@ -78,7 +86,7 @@ export const LuxeProductHero: React.FC = () => {
           <div style={{
             fontSize: '13px',
             fontWeight: 700,
-            color: '#7a4f2d',
+            color: '#108448',
             fontFamily: "'Inter', sans-serif",
             marginBottom: '6px',
             letterSpacing: '0.05em',

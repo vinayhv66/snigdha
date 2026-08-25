@@ -1,7 +1,8 @@
 import type { Metadata, Viewport } from 'next';
-import { Cormorant_Garamond, Inter } from 'next/font/google';
+import { Cormorant_Garamond, Inter, Oswald } from 'next/font/google';
 import './globals.css';
 import { CartProvider } from '@/context/CartContext';
+import { WhatsAppFloat } from '@/components/WhatsAppFloat';
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
@@ -15,6 +16,13 @@ const inter = Inter({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700', '800', '900'],
   variable: '--font-inter',
+  display: 'swap',
+});
+
+const oswald = Oswald({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-oswald',
   display: 'swap',
 });
 
@@ -220,7 +228,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className={`${cormorant.variable} ${inter.variable}`} data-scroll-behavior="smooth">
+    <html lang="en" className={`${cormorant.variable} ${inter.variable} ${oswald.variable}`} data-scroll-behavior="smooth">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/assets/images/user_emblem_tight.png" />
@@ -230,7 +238,10 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <CartProvider>{children}</CartProvider>
+        <CartProvider>
+          {children}
+          <WhatsAppFloat />
+        </CartProvider>
       </body>
     </html>
   );
