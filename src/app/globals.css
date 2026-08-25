@@ -1,0 +1,123 @@
+/* ==========================================================================
+   SNIGDHA - HAUTE BOTANICAL OIL
+   Google SEO & Core Web Vitals Optimized Stylesheet
+   Concentric Geometric Honeycomb Pattern System
+   ========================================================================== */
+
+:root {
+  --primary-forest: #244d36;
+  --primary-forest-dark: #12241a;
+  --primary-emerald: #108448;
+  --wood-brown: #7a4f2d;
+
+  --bg-main: #faf7f2;
+  --bg-card: #ffffff;
+  --bg-card-inner: #f6f0e4;
+  
+  --text-dark: #121e17;
+  --text-muted: #536158;
+  --text-light: #839188;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --radius-pill: 9999px;
+
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 15px;
+  background-color: var(--bg-main);
+  color: var(--text-dark);
+}
+
+body {
+  font-family: var(--font-inter), 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg-main);
+  /* Exact Concentric Geometric Hexagonal Honeycomb Pattern */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='90' viewBox='0 0 52 90'%3E%3Cg fill='none' stroke='%23c4b197' stroke-width='0.9' stroke-opacity='0.28'%3E%3Cpolygon points='26,17 52,32 52,62 26,77 0,62 0,32'/%3E%3Cpolygon points='26,24 45,35 45,59 26,70 7,59 7,35' stroke-opacity='0.22'/%3E%3Cpolygon points='26,33 36,39 36,55 26,61 16,55 16,39' stroke-opacity='0.18'/%3E%3Ccircle cx='26' cy='47' r='2' fill='%23c4b197' fill-opacity='0.22' stroke='none'/%3E%3Cpolygon points='0,-28 26,-13 26,17 0,32 -26,17 -26,-13'/%3E%3Cpolygon points='0,-21 19,-10 19,14 0,25 -19,14 -19,-10' stroke-opacity='0.22'/%3E%3Cpolygon points='0,-12 10,-6 10,10 0,16 -10,10 -10,-6' stroke-opacity='0.18'/%3E%3Ccircle cx='0' cy='2' r='2' fill='%23c4b197' fill-opacity='0.22' stroke='none'/%3E%3Cpolygon points='52,-28 78,-13 78,17 52,32 26,17 26,-13'/%3E%3Cpolygon points='52,-21 71,-10 71,14 52,25 33,14 33,-10' stroke-opacity='0.22'/%3E%3Cpolygon points='52,-12 62,-6 62,10 52,16 42,10 42,-6' stroke-opacity='0.18'/%3E%3Ccircle cx='52' cy='2' r='2' fill='%23c4b197' fill-opacity='0.22' stroke='none'/%3E%3Cpolygon points='0,62 26,77 26,107 0,122 -26,107 -26,77'/%3E%3Cpolygon points='0,69 19,80 19,104 0,115 -19,104 -19,80' stroke-opacity='0.22'/%3E%3Cpolygon points='0,78 10,84 10,100 0,106 -10,100 -10,84' stroke-opacity='0.18'/%3E%3Ccircle cx='0' cy='92' r='2' fill='%23c4b197' fill-opacity='0.22' stroke='none'/%3E%3Cpolygon points='52,62 78,77 78,107 52,122 26,107 26,77'/%3E%3Cpolygon points='52,69 71,80 71,104 52,115 33,104 33,80' stroke-opacity='0.22'/%3E%3Cpolygon points='52,78 62,84 62,100 52,106 42,100 42,84' stroke-opacity='0.18'/%3E%3Ccircle cx='52' cy='92' r='2' fill='%23c4b197' fill-opacity='0.22' stroke='none'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  color: var(--text-dark);
+  letter-spacing: -0.01em;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  position: relative;
+}
+
+body > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Typography with Preloaded Next.js Google Fonts */
+h1, h2, h3, .font-serif {
+  font-family: var(--font-cormorant), 'Cormorant Garamond', Georgia, serif;
+  font-weight: 700;
+  color: var(--text-dark);
+  letter-spacing: -0.02em;
+}
+
+p {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+.container-luxe {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes snigdhaShimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.snigdha-skeleton {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  .container-luxe {
+    padding: 0 12px;
+  }
+}
