@@ -43,19 +43,12 @@ export const LuxeProductHero: React.FC = () => {
             fill
             style={{
               objectFit: 'cover',
-              objectPosition: 'center 40%', /* Centers bottle and press perfectly */
+              objectPosition: 'center 40%',
             }}
             priority
             quality={92}
             sizes="100vw"
           />
-          {/* Dark overlay to improve text contrast */}
-          <div style={{
-            position: 'absolute',
-            inset: 0,
-            background: 'rgba(0, 0, 0, 0.35)',
-            zIndex: 1,
-          }} />
         </div>
 
         {/* ── Hero Typography & 1-Click Direct Order Action ── */}
