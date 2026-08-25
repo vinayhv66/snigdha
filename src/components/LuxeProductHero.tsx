@@ -54,7 +54,7 @@ export const LuxeProductHero: React.FC = () => {
         {/* ── Hero Typography & 1-Click Direct Order Action ── */}
         <div style={{
           maxWidth: '720px',
-          margin: '-60px auto 0',
+          margin: '-120px auto 0',
           padding: '0 16px',
           textAlign: 'center',
           position: 'relative',
@@ -67,7 +67,7 @@ export const LuxeProductHero: React.FC = () => {
             fontWeight: 700,
             lineHeight: 1.1,
             color: '#121e17',
-            margin: '0 auto 8px',
+            margin: '0 auto 4px',
             letterSpacing: '-0.02em',
           }}>
             Pure Wood-Pressed<br />
@@ -80,7 +80,7 @@ export const LuxeProductHero: React.FC = () => {
             fontWeight: 700,
             color: '#7a4f2d',
             fontFamily: "'Inter', sans-serif",
-            marginBottom: '10px',
+            marginBottom: '6px',
             letterSpacing: '0.05em',
             textTransform: 'uppercase',
           }}>
@@ -88,7 +88,7 @@ export const LuxeProductHero: React.FC = () => {
           </div>
 
           {/* 100% PURE & FRESH Solid Green Pill */}
-          <div style={{ marginBottom: '14px' }}>
+          <div style={{ marginBottom: '10px' }}>
             <span style={{
               display: 'inline-block',
               background: '#244d36',
