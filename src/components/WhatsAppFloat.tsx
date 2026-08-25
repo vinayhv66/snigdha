@@ -16,6 +16,7 @@ export const WhatsAppFloat: React.FC = () => {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat with us on WhatsApp"
+      className="whatsapp-float"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       style={{

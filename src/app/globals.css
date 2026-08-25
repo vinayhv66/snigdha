@@ -159,4 +159,9 @@ button {
   .container-luxe {
     padding: 0 12px;
   }
+  /* Push WhatsApp float above the sticky quick-buy dock on mobile */
+  .whatsapp-float {
+    bottom: 88px !important;
+    right: 16px !important;
+  }
 }

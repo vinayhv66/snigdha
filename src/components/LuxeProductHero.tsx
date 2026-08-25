@@ -77,8 +77,8 @@ export const LuxeProductHero: React.FC = () => {
 
           {/* Location Matching Label */}
           <div style={{
-            fontSize: '11px',
-            fontWeight: 300,
+            fontSize: '13px',
+            fontWeight: 500,
             color: '#108448',
             fontFamily: "var(--font-montserrat), 'Montserrat', sans-serif",
             marginBottom: '6px',
