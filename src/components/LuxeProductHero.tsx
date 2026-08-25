@@ -62,14 +62,14 @@ export const LuxeProductHero: React.FC = () => {
         }}>
           {/* Main Headline */}
           <h1 style={{
-            fontFamily: "var(--font-oswald), 'Oswald', sans-serif",
-            fontSize: 'clamp(2.6rem, 5vw, 3.8rem)',
-            fontWeight: 900,
-            lineHeight: 1.1,
+            fontFamily: "var(--font-cormorant), 'Cormorant Garamond', Georgia, serif",
+            fontSize: 'clamp(3rem, 6vw, 4.8rem)',
+            fontWeight: 700,
+            lineHeight: 1.15,
             color: '#7a4f2d',
-            margin: '0 auto 4px',
-            letterSpacing: '0.04em',
-            textTransform: 'uppercase',
+            margin: '0 auto 6px',
+            letterSpacing: '-0.01em',
+            fontStyle: 'italic',
           }}>
             Pure Wood-Pressed<br />
             Healthy Cooking Oils
@@ -77,12 +77,12 @@ export const LuxeProductHero: React.FC = () => {
 
           {/* Location Matching Label */}
           <div style={{
-            fontSize: '13px',
-            fontWeight: 700,
+            fontSize: '11px',
+            fontWeight: 300,
             color: '#108448',
-            fontFamily: "'Inter', sans-serif",
+            fontFamily: "var(--font-montserrat), 'Montserrat', sans-serif",
             marginBottom: '6px',
-            letterSpacing: '0.05em',
+            letterSpacing: '0.2em',
             textTransform: 'uppercase',
           }}>
             BY THE FARMERS OF WESTERN GHAT

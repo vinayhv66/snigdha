@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Cormorant_Garamond, Inter, Oswald } from 'next/font/google';
+import { Cormorant_Garamond, Inter, Oswald, Montserrat } from 'next/font/google';
 import './globals.css';
 import { CartProvider } from '@/context/CartContext';
 import { WhatsAppFloat } from '@/components/WhatsAppFloat';
@@ -23,6 +23,13 @@ const oswald = Oswald({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
   variable: '--font-oswald',
+  display: 'swap',
+});
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-montserrat',
   display: 'swap',
 });
 
@@ -228,7 +235,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className={`${cormorant.variable} ${inter.variable} ${oswald.variable}`} data-scroll-behavior="smooth">
+    <html lang="en" className={`${cormorant.variable} ${inter.variable} ${oswald.variable} ${montserrat.variable}`} data-scroll-behavior="smooth">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/assets/images/user_emblem_tight.png" />
